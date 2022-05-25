@@ -35,11 +35,11 @@ packer.startup({
         -- treesitter
         use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 
-        -- copilot
-        use("github/copilot.vim")
-
         -- Auto complete
         use({ 'neoclide/coc.nvim', branch = 'release'})
+
+        -- copilot
+        use("github/copilot.vim")
 
     end,
     config = {
