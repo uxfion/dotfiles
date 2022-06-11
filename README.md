@@ -1,17 +1,50 @@
 # dotfiles
 
-我的点文件，包括：
-- [ ] nvim
+- [ ] homebrew
+- [ ] neovim
 - [ ] tmux
 
-## NeoVim
+## [Homebrew](https://brew.sh)
 
-[neovim](https://github.com/neovim/neovim)
+### for ubuntu
+
+[Homebrew-on-Linux](https://docs.brew.sh/Homebrew-on-Linux)
 
 ```
+sudo apt-get install build-essential procps curl file git
+
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/lecter/.profile
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+```
+
+### for mac
+
+
+
+## [Neovim](https://neovim.io)
+
+### install
+
+[neovim github](https://github.com/neovim/neovim)
+
+```
+# recommended
+brew install neovim
+```
+
+or
+
+```
+# deprecated
 wget https://github.com/neovim/neovim/releases/download/v0.7.0/nvim-linux64.deb
 sudo apt install ./nvim-linux64.deb
 ```
+
+### setup
 
 [dotfiles](https://github.com/uxfion/dotfiles)
 
