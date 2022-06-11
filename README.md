@@ -63,9 +63,25 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 ```
 sudo apt install python3-pip
 pip install pynvim
+```
+
+node.js
+
+```
+# recommended
+brew install node@16
+brew unlink node
+brew link --overwrite node@16
+```
+
+```
+# deprecated
 curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
 sudo apt install -y nodejs
-sudo npm install -g neovim
+```
+
+```
+npm install -g neovim
 ```
 
 ```
