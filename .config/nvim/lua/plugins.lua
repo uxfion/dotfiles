@@ -29,7 +29,7 @@ packer.startup({
         use("LinArcX/telescope-env.nvim")
 
         -- dashboard
-        use("glepnir/dashboard-nvim")
+        use({ "glepnir/dashboard-nvim", commit = "a36b323" })
         use("ahmedkhalf/project.nvim")
 
         -- treesitter

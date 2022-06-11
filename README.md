@@ -23,7 +23,9 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 ### for mac
 
-
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
 ## [Neovim](https://neovim.io)
 
@@ -96,6 +98,14 @@ sudo ln -s /usr/bin/nvim /usr/bin/v
 ```
 Hack Regular Nerd Font Complete.ttf
 not Mono ending
+```
+
+### 未解决的问题
+
+因为[dashboard-nvim](https://github.com/glepnir/dashboard-nvim)最近在迭代，把版本锁定在稳定版本
+
+```
+use({ "glepnir/dashboard-nvim", commit = "a36b323" })
 ```
 
 ## tmux
