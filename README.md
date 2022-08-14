@@ -105,8 +105,8 @@ sudo apt install xclip
 #### softlink
 
 ```bash
-sudo ln -s echo $(which nvim) /usr/bin/vim
-sudo ln -s echo $(which nvim) /usr/bin/v
+sudo ln -s $(which nvim) /usr/bin/vim
+sudo ln -s $(which nvim) /usr/bin/v
 ```
 
 ### 未解决的问题
@@ -122,3 +122,5 @@ use({ "glepnir/dashboard-nvim", commit = "a36b323" })
 ```shell
 cp dotfiles/.tmux.conf ~
 ```
+
+## lazygit
