@@ -11,6 +11,8 @@ end
 -- 列表操作快捷键
 local list_keys = require('keybindings').nvimTreeList
 nvim_tree.setup({
+    -- 完全禁止内置netrw
+    disable_netrw = true,
     -- 不显示 git 状态图标
     git = {
         enable = false,
@@ -24,7 +26,7 @@ nvim_tree.setup({
     -- 隐藏 .文件 和 node_modules 文件夹
     filters = {
         dotfiles = true,
-        custom = { 'node_modules' },
+        -- custom = { 'node_modules' },
     },
     view = {
         -- 宽度
@@ -35,7 +37,7 @@ nvim_tree.setup({
         hide_root_folder = false,
         -- 自定义列表中快捷键
         mappings = {
-            custom_only = false,
+            custom_only = true,
             list = list_keys,
         },
         -- 不显示行数
@@ -49,7 +51,7 @@ nvim_tree.setup({
             -- 首次打开大小适配
             resize_window = true,
             -- 打开文件时关闭
-            quit_on_open = true,
+            quit_on_open = false,
         },
     },
     -- wsl install -g wsl-open

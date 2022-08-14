@@ -2,11 +2,16 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+local opt = {
+    noremap = true,
+    silent = true,
+}
+
 -- 定义本地变量map('模式', '按键', '映射为', 'options')
 local map = vim.api.nvim_set_keymap
 
 -- 复用opt参数
-local opt = {noremap = true, silent = true}
+
 
 -- ======================
 -- === 窗口管理快捷键 ===

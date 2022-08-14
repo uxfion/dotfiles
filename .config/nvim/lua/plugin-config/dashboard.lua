@@ -14,7 +14,7 @@ db.custom_footer = {
 db.custom_center = {
     {
         icon = "  ",
-        desc = "Projects                             ",
+        desc = "Projects                            ",
         action = "Telescope projects",
     },
     {

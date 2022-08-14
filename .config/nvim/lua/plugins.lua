@@ -64,7 +64,7 @@ packer.startup({
         use("arkav/lualine-lsp-progress")
 
         -- 模糊搜索 telescope
-        use({ 'nvim-telescope/telescope.nvim',
+        use({"nvim-telescope/telescope.nvim",
             requires = { "nvim-lua/plenary.nvim" }
         })
         -- telescope extensions
@@ -82,9 +82,9 @@ packer.startup({
         })
 
         -- Auto complete
-        --use({'neoclide/coc.nvim',
-        --    branch = 'release'
-        --})
+        use({'neoclide/coc.nvim',
+            branch = 'release'
+        })
 
         -- copilot
         use("github/copilot.vim")

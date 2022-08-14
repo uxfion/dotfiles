@@ -49,7 +49,7 @@ vim.o.hlsearch = false
 vim.o.incsearch = true
 
 -- 命令行高为2，提供足够的显示空间
-vim.o.cmdheight = 2
+vim.o.cmdheight = 1
 
 -- 当文件被外部程序修改时，自动加载
 vim.o.autoread = true
@@ -86,7 +86,7 @@ vim.o.splitright = true
 vim.g.completeopt = "menu,menuone,noselect,noinsert"
 
 -- 样式
-vim.o.background = "dark"
+-- vim.o.background = "dark"
 vim.o.termguicolors = true
 vim.opt.termguicolors = true
 
@@ -109,3 +109,5 @@ vim.o.showtabline = 2
 -- 使用增强状态栏插件后不再需要 vim 的模式提示
 vim.o.showmode = false
 
+-- 配置剪切板
+-- vim.opt.clipboard = "unnamedplus"
