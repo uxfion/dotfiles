@@ -61,6 +61,8 @@ cp -r dotfiles/.config/nvim ~/.config
 
 #### [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
+*no need to install packer.nvim mannually*
+
 ```bash
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
@@ -105,17 +107,12 @@ sudo apt install xclip
 #### softlink
 
 ```bash
-sudo ln -s $(which nvim) /usr/bin/vim
-sudo ln -s $(which nvim) /usr/bin/v
+sudo ln -s $(which nvim) /usr/local/bin/vim
+sudo ln -s $(which nvim) /usr/local/bin/v
 ```
 
 ### 未解决的问题
 
-因为[dashboard-nvim](https://github.com/glepnir/dashboard-nvim)最近在迭代，把版本锁定在稳定版本
-
-```lua
-use({ "glepnir/dashboard-nvim", commit = "a36b323" })
-```
 
 ## tmux
 
