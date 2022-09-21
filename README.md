@@ -8,27 +8,32 @@
 Hack Regular Nerd Font Complete.ttf
 not Mono ending
 
-## [Homebrew](https://brew.sh)
+## Package Manager
 
-### for ubuntu
+### snap for ubuntu
+
+```bash
+sudo apt update
+sudo apt install snapd
+```
+
+### [Homebrew](https://brew.sh) for mac and ubuntu
+
+```bash
+# for mac
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
 [Homebrew-on-Linux](https://docs.brew.sh/Homebrew-on-Linux)
 
 ```bash
-# requirements
+# for ubuntu
 sudo apt-get install build-essential procps curl file git
 # install homebrew script
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # environment
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/lecter/.profile
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-```
-
-### for mac
-
-```bash
-# install homebrew script
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ## [Neovim](https://neovim.io)
@@ -40,6 +45,7 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 ```bash
 # recommended
 brew install neovim
+sudo snap install nvim --classic
 ```
 
 or
@@ -89,9 +95,7 @@ brew link --overwrite node@16
 or
 
 ```bash
-# deprecated
-curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
-sudo apt install -y nodejs
+
 ```
 
 ```bash
@@ -111,13 +115,15 @@ sudo ln -s $(which nvim) /usr/local/bin/vim
 sudo ln -s $(which nvim) /usr/local/bin/v
 ```
 
-### 未解决的问题
-
-
 ## tmux
 
 ```shell
 cp dotfiles/.tmux.conf ~
+sudo ln -s $(which tmux) /usr/local/bin/t
 ```
 
 ## lazygit
+
+## Q
+
+- [ ] coc.nvim tab didn't work
