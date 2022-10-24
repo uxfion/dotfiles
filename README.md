@@ -8,13 +8,12 @@
 Hack Regular Nerd Font Complete.ttf
 not Mono ending
 
-## Package Manager
+## package manager
 
 ### snap for ubuntu
 
 ```bash
-sudo apt update
-sudo apt install snapd
+sudo apt update && sudo apt install -y snapd
 ```
 
 ### [Homebrew](https://brew.sh) for mac and ubuntu
@@ -24,11 +23,11 @@ sudo apt install snapd
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-[Homebrew-on-Linux](https://docs.brew.sh/Homebrew-on-Linux)
+[homebrew-on-linux](https://docs.brew.sh/Homebrew-on-Linux)
 
 ```bash
 # for ubuntu
-sudo apt-get install build-essential procps curl file git
+sudo apt install -y build-essential procps curl file git
 # install homebrew script
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # environment
@@ -36,7 +35,7 @@ echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/lecter/.p
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 ```
 
-## [Neovim](https://neovim.io)
+## [neovim](https://neovim.io)
 
 ### install
 
@@ -117,9 +116,8 @@ sudo ln -s $(which nvim) /usr/local/bin/v
 
 ## tmux
 
-```shell
-cp dotfiles/.tmux.conf ~
-sudo ln -s $(which tmux) /usr/local/bin/t
+```bash
+cp -r dotfiles/.config/tmux ~/.config
 ```
 
 ## lazygit
