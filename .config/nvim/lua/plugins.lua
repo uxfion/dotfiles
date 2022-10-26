@@ -47,7 +47,7 @@ packer.startup({
 
         -- 侧边栏 nvim-tree
         use({"kyazdani42/nvim-tree.lua",
-            requires = "kyazdani42/nvim-web-devicons"
+            requires = "kyazdani42/nvim-web-devicons",
         })
 
         -- 顶部标签页 bufferline

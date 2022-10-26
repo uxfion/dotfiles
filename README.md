@@ -31,8 +31,12 @@ sudo apt install -y build-essential procps curl file git
 # install homebrew script
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # environment
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /home/lecter/.profile
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/lecter/.profile
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+sudo apt-get install build-essential
+brew install gcc
 ```
 
 ## [neovim](https://neovim.io)
@@ -61,6 +65,7 @@ sudo dpkg -i ./nvim-linux64.deb
 
 ```bash
 git clone https://github.com/uxfion/dotfiles.git
+rm -rf ~/.config/nvim
 cp -r dotfiles/.config/nvim ~/.config
 ```
 
@@ -124,4 +129,3 @@ cp -r dotfiles/.config/tmux ~/.config
 
 ## Q
 
-- [ ] coc.nvim tab didn't work

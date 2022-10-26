@@ -25,4 +25,6 @@ require("plugin-config.dashboard")
 require("plugin-config.project")
 -- treesitter
 require("plugin-config.nvim-treesitter")
+-- coc
+require("plugin-config.coc")
 
