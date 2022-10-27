@@ -1,3 +1,11 @@
+-- extensions
+vim.g.coc_global_extensions = {
+    'coc-marketplace',
+    'coc-lua',
+    'coc-json',
+    'coc-pyright',
+}
+
 -- Some servers have issues with backup files, see #649.
 vim.opt.backup = false
 vim.opt.writebackup = false

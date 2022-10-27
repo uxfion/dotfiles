@@ -2,7 +2,9 @@
 
 - [x] homebrew
 - [x] neovim
+- [x] coc
 - [x] tmux
+- [x] z.lua
 - [ ] lazygit
 
 Hack Regular Nerd Font Complete.ttf
@@ -112,7 +114,11 @@ npm install -g neovim
 sudo apt install xclip
 ```
 
-#### softlink
+#### alias
+
+```
+alias v='nvim'
+```
 
 ```bash
 sudo ln -s $(which nvim) /usr/local/bin/vim
@@ -123,6 +129,23 @@ sudo ln -s $(which nvim) /usr/local/bin/v
 
 ```bash
 cp -r dotfiles/.config/tmux ~/.config
+```
+
+## z.lua
+
+```bash
+brew install z.lua
+```
+
+```
+# bash init
+eval "$(lua /home/linuxbrew/.linuxbrew/share/z.lua/z.lua --init bash once enhanced)"
+
+# zsh init
+eval "$(lua /opt/homebrew/share/z.lua/z.lua --init zsh once enhanced)"
+
+# 
+eval "$(lua /path/to/z.lua  --init posix once enhanced)"  # Posix shell 初始化
 ```
 
 ## lazygit
