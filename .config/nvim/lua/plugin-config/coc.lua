@@ -4,6 +4,8 @@ vim.g.coc_global_extensions = {
     'coc-lua',
     'coc-json',
     'coc-pyright',
+    'coc-yaml',
+    'coc-docker',
 }
 
 -- Some servers have issues with backup files, see #649.

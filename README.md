@@ -101,7 +101,7 @@ brew link --overwrite node@16
 or
 
 ```bash
-
+sudo snap install node --classic --channel=16
 ```
 
 ```bash
