@@ -67,8 +67,7 @@ sudo dpkg -i ./nvim-linux64.deb
 
 ```bash
 git clone https://github.com/uxfion/dotfiles.git
-rm -rf ~/.config/nvim
-cp -r dotfiles/.config/nvim ~/.config
+ln -s ~/dotfiles/.config/nvim ~/.config/nvim
 ```
 
 #### [packer.nvim](https://github.com/wbthomason/packer.nvim)
@@ -116,7 +115,9 @@ sudo apt install xclip
 
 #### alias
 
-```
+`vim ~/.bashrc`
+
+```bash
 alias v='nvim'
 ```
 
@@ -128,7 +129,7 @@ sudo ln -s $(which nvim) /usr/local/bin/v
 ## tmux
 
 ```bash
-cp -r dotfiles/.config/tmux ~/.config
+ln -s ~/dotfiles/.config/tmux ~/.config/tmux
 ```
 
 ## z.lua
