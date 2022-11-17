@@ -51,6 +51,7 @@ brew install gcc
 # recommended
 brew install neovim
 sudo snap install nvim --classic
+scoop install neovim
 ```
 
 or
@@ -68,6 +69,8 @@ sudo dpkg -i ./nvim-linux64.deb
 ```bash
 git clone https://github.com/uxfion/dotfiles.git
 ln -s ~/dotfiles/.config/nvim ~/.config/nvim
+
+cp -r ~/dotfiles/.config/nvim C:\Users\Lecter\AppData\Local
 ```
 
 #### [packer.nvim](https://github.com/wbthomason/packer.nvim)
@@ -101,6 +104,12 @@ or
 
 ```bash
 sudo snap install node --classic --channel=16
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+```
+
+```
+scoop bucket add versions
+scoop install nodejs16
 ```
 
 ```bash
@@ -136,6 +145,7 @@ ln -s ~/dotfiles/.config/tmux ~/.config/tmux
 
 ```bash
 brew install z.lua
+scoop install z.lua
 ```
 
 ```
