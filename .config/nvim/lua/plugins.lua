@@ -82,8 +82,8 @@ packer.startup({
         })
 
         -- Auto complete
-        use({'neoclide/coc.nvim',
-            branch = 'release'
+        use({"neoclide/coc.nvim",
+            branch = "release"
         })
 
         -- copilot
@@ -96,7 +96,7 @@ packer.startup({
     end,
     config = {
         -- 并发数限制
-        max_jobs = 4,
+        max_jobs = 8,
 
         --        display = {
         --            open_fn = require("packer.util").float

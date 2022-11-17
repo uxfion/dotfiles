@@ -27,4 +27,5 @@ require("plugin-config.project")
 require("plugin-config.nvim-treesitter")
 -- coc
 require("plugin-config.coc")
-
+-- copilot
+require("plugin-config.copilot")
