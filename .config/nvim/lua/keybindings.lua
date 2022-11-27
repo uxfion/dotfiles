@@ -12,7 +12,6 @@ local map = vim.api.nvim_set_keymap
 
 -- 复用opt参数
 
-
 -- ======================
 -- === 窗口管理快捷键 ===
 -- ======================
@@ -126,8 +125,8 @@ map("i", "<C-l>", "<ESC>A", opt)
 map("c", "<C-j>", "<C-n>", { noremap = false })
 map("c", "<C-k>", "<C-p>", { noremap = false })
 
--- nvim-treesitter
-map("n", "<leader>fm", "gg=G<C-o>", opt)
+--map("n", "<leader>fm", "gg=G<C-o>", opt)
+map("n", "<leader>fm", "<cmd>lua vim.lsp.buf.format({ async = true })<CR>", opt)
 
 -- ==================
 -- === 插件快捷键 ===
@@ -145,15 +144,15 @@ map("n", "<A-m>", ":NvimTreeToggle<CR>", opt)
 -- 列表快捷键
 pluginKeys.nvimTreeList = {
     -- enter/o 打开文件或文件夹
-    { key = {"<CR>", "o", "<2-LeftMouse>"}, action = "edit" },
+    { key = { "<CR>", "o", "<2-LeftMouse>" }, action = "edit" },
 
     -- 分屏打开文件
     { key = "v", action = "vsplit" },
     { key = "h", action = "split" },
 
     -- 显示隐藏文件
-    { key = "i", action = "toggle_ignored" },   -- Ignore (node_modules)
-    { key = ".", action = "toggle_dotfiles" },  -- Hide (dotfiles)
+    { key = "i", action = "toggle_ignored" }, -- Ignore (node_modules)
+    { key = ".", action = "toggle_dotfiles" }, -- Hide (dotfiles)
 
     -- 显示文件信息
     { key = "I", action = "toggle_file_info" },
@@ -226,8 +225,4 @@ pluginKeys.telescopeList = {
     },
 }
 
-
-
-
 return pluginKeys
-

@@ -84,6 +84,11 @@ packer.startup({
         -- copilot
         use("github/copilot.vim")
 
+        -- dap
+        --use("mfussenegger/nvim-dap")
+        --use("theHamsta/nvim-dap-virtual-text")
+        --use("rcarriga/nvim-dap-ui")
+
         if paccker_bootstrap then
             packer.sync()
         end

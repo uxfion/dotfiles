@@ -32,4 +32,5 @@ require("plugin-config.nvim-treesitter")
 require("plugin-config.coc")
 -- copilot
 require("plugin-config.copilot")
+-- code formatter
 require("plugin-config.null-ls")

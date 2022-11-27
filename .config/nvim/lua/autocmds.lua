@@ -35,20 +35,11 @@ autocmd("BufWritePost", {
     group = myAutoGroup,
     -- autocmd BufWritePost plugins.lua source <afile> | PackerSync
     callback = function()
-        if vim.fn.expand("<afile>") == "lua/plugins.lua" then
-            vim.api.nvim_command("source lua/plugins.lua")
+        if vim.fn.expand("<afile>") == ".config/nvim/lua/plugins.lua" then
+            vim.api.nvim_command("source .config/nvim/lua/plugins.lua")
             vim.api.nvim_command("PackerSync")
         end
     end,
-})
-
--- Highlight on yank
-autocmd("TextYankPost", {
-    callback = function()
-        vim.highlight.on_yank()
-    end,
-    group = myAutoGroup,
-    pattern = "*",
 })
 
 -- 用o换行不要延续注释
