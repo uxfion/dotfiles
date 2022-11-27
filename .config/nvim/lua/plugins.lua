@@ -81,6 +81,12 @@ packer.startup({
             run = ":TSUpdate"
         })
 
+        -- 代码格式化
+        use({"jose-elias-alvarez/null-ls.nvim",
+            requires = "nvim-lua/plenary.nvim"
+        })
+
+
         -- Auto complete
         use({"neoclide/coc.nvim",
             branch = "release"

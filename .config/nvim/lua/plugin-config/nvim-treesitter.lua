@@ -7,7 +7,13 @@ end
 treesitter.setup({
     -- 安装 language parser
     -- :TSInstallInfo 命令查看支持的语言
-    ensure_installed = { "python", "json", "lua", "bash" },
+    ensure_installed = {
+        "markdown",
+        "python",
+        "json",
+        "lua",
+        "bash",
+    },
     -- 启用代码高亮模块
     highlight = {
         enable = true,
