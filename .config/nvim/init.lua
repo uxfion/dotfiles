@@ -10,6 +10,9 @@ require("plugins")
 -- 主题设置
 require("colorscheme")
 
+-- 自动命令
+require("autocmds")
+
 -- 插件配置
 -- 侧边栏
 require("plugin-config.nvim-tree")

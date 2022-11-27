@@ -113,7 +113,7 @@ sudo apt install xclip
 ```
 brew install stylua
 pip install black
-npm install -g
+npm install -g prettier
 ```
 
 #### alias

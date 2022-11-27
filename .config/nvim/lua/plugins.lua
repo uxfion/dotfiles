@@ -46,27 +46,23 @@ packer.startup({
         use("folke/tokyonight.nvim")
 
         -- 侧边栏 nvim-tree
-        use({"kyazdani42/nvim-tree.lua",
-            requires = "kyazdani42/nvim-web-devicons",
-        })
+        use({ "kyazdani42/nvim-tree.lua", requires = "kyazdani42/nvim-web-devicons" })
 
         -- 顶部标签页 bufferline
         use({
             "akinsho/bufferline.nvim",
-            requires = { "kyazdani42/nvim-web-devicons", "moll/vim-bbye" }
+            requires = { "kyazdani42/nvim-web-devicons", "moll/vim-bbye" },
         })
 
         -- 底部信息栏 lualine
         use({
             "nvim-lualine/lualine.nvim",
-            requires = { "kyazdani42/nvim-web-devicons" }
+            requires = { "kyazdani42/nvim-web-devicons" },
         })
         use("arkav/lualine-lsp-progress")
 
         -- 模糊搜索 telescope
-        use({"nvim-telescope/telescope.nvim",
-            requires = { "nvim-lua/plenary.nvim" }
-        })
+        use({ "nvim-telescope/telescope.nvim", requires = { "nvim-lua/plenary.nvim" } })
         -- telescope extensions
         use("LinArcX/telescope-env.nvim")
 
@@ -77,20 +73,13 @@ packer.startup({
         use("ahmedkhalf/project.nvim")
 
         -- treesitter
-        use({"nvim-treesitter/nvim-treesitter",
-            run = ":TSUpdate"
-        })
+        use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 
         -- 代码格式化
-        use({"jose-elias-alvarez/null-ls.nvim",
-            requires = "nvim-lua/plenary.nvim"
-        })
-
+        use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" })
 
         -- Auto complete
-        use({"neoclide/coc.nvim",
-            branch = "release"
-        })
+        use({ "neoclide/coc.nvim", branch = "release" })
 
         -- copilot
         use("github/copilot.vim")
@@ -98,7 +87,6 @@ packer.startup({
         if paccker_bootstrap then
             packer.sync()
         end
-
     end,
     config = {
         -- 并发数限制
@@ -107,20 +95,5 @@ packer.startup({
         --        display = {
         --            open_fn = require("packer.util").float
         --        }
-
     },
 })
-
-
-
--- 每次保存 plugins.lua 自动安装插件
-pcall(
-    vim.cmd,
-    [[
-        augroup packer_user_config
-        autocmd!
-        autocmd BufWritePost plugins.lua source <afile> | PackerSync
-        augroup end
-    ]]
-)
-

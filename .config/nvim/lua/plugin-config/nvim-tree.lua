@@ -9,7 +9,7 @@ if not status then
 end
 
 -- 列表操作快捷键
-local list_keys = require('keybindings').nvimTreeList
+local list_keys = require("keybindings").nvimTreeList
 nvim_tree.setup({
     -- 完全禁止内置netrw
     disable_netrw = true,
@@ -32,7 +32,7 @@ nvim_tree.setup({
         -- 宽度
         width = 30,
         -- 也可以 'right'
-        side = 'left',
+        side = "left",
         -- 隐藏根目录
         hide_root_folder = false,
         -- 自定义列表中快捷键
@@ -44,7 +44,7 @@ nvim_tree.setup({
         number = false,
         relativenumber = false,
         -- 显示图标
-        signcolumn = 'yes',
+        signcolumn = "yes",
     },
     actions = {
         open_file = {
@@ -57,19 +57,6 @@ nvim_tree.setup({
     -- wsl install -g wsl-open
     -- https://github.com/4U6U57/wsl-open/
     system_open = {
-        cmd = 'open', -- mac 直接设置为 open
-    },
-
-    -- project plugin 需要这样设置
-    update_cwd = true,
-    update_focused_file = {
-        enable = true,
-        update_cwd = true,
+        cmd = "open", -- mac 直接设置为 open
     },
 })
-
--- 自动关闭
-vim.cmd([[
-    autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif
-]])
-
