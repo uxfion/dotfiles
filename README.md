@@ -146,8 +146,8 @@ eval "$(lua /home/linuxbrew/.linuxbrew/share/z.lua/z.lua --init bash once enhanc
 # zsh init
 eval "$(lua /opt/homebrew/share/z.lua/z.lua --init zsh once enhanced)"
 
-#
-eval "$(lua /path/to/z.lua  --init posix once enhanced)"  # Posix shell 初始化
+# powershell init
+Invoke-Expression (& { (lua "D:\Applications\Scoop\apps\z.lua\current\z.lua" --init powershell enhanced once) -join "`n" })
 ```
 
 ## lazygit
