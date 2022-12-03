@@ -34,3 +34,5 @@ require("plugin-config.coc")
 require("plugin-config.copilot")
 -- code formatter
 require("plugin-config.null-ls")
+-- 注释快捷键
+require("plugin-config.comment")

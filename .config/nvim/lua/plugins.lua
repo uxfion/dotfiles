@@ -84,6 +84,7 @@ packer.startup({
         -- copilot
         use("github/copilot.vim")
 
+        use("numToStr/Comment.nvim")
         -- dap
         --use("mfussenegger/nvim-dap")
         --use("theHamsta/nvim-dap-virtual-text")
