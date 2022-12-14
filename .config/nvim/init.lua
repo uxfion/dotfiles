@@ -36,3 +36,5 @@ require("plugin-config.copilot")
 require("plugin-config.null-ls")
 -- 注释快捷键
 require("plugin-config.comment")
+-- 作用域连线
+require("plugin-config.indent-blankline")

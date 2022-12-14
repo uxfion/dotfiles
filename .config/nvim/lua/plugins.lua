@@ -85,6 +85,7 @@ packer.startup({
         use("github/copilot.vim")
 
         use("numToStr/Comment.nvim")
+        use("lukas-reineke/indent-blankline.nvim")
         -- dap
         --use("mfussenegger/nvim-dap")
         --use("theHamsta/nvim-dap-virtual-text")
