@@ -38,3 +38,4 @@ require("plugin-config.null-ls")
 require("plugin-config.comment")
 -- 作用域连线
 require("plugin-config.indent-blankline")
+require("plugin-config.gitsigns")

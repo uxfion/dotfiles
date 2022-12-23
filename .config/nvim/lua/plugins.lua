@@ -85,7 +85,9 @@ packer.startup({
         use("github/copilot.vim")
 
         use("numToStr/Comment.nvim")
+        -- 结构线
         use("lukas-reineke/indent-blankline.nvim")
+        use({ "lewis6991/gitsigns.nvim" })
         -- dap
         --use("mfussenegger/nvim-dap")
         --use("theHamsta/nvim-dap-virtual-text")

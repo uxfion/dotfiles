@@ -9,6 +9,7 @@ vim.g.coc_global_extensions = {
     "coc-pyright",
     "coc-yaml",
     "coc-docker",
+    "coc-highlight",
 }
 
 -- Some servers have issues with backup files, see #649.
