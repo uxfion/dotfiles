@@ -10,6 +10,9 @@ vim.g.coc_global_extensions = {
     "coc-yaml",
     "coc-docker",
     "coc-highlight",
+    "coc-actions",
+    "coc-translator",
+    "coc-texlab",
 }
 
 -- Some servers have issues with backup files, see #649.

@@ -83,6 +83,7 @@ pip install pynvim
 
 ```bash
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt install -y nodejs
 ```
 
 ##### pack
@@ -106,6 +107,13 @@ npm install -g neovim
 
 ```bash
 sudo apt install xclip
+```
+
+#### find
+
+```
+brew install ripgrep
+brew install fd
 ```
 
 #### code formatter
@@ -139,7 +147,7 @@ brew install z.lua
 scoop install z.lua
 ```
 
-```
+```bash
 # bash init
 eval "$(lua /home/linuxbrew/.linuxbrew/share/z.lua/z.lua --init bash once enhanced)"
 
