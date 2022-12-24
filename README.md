@@ -6,6 +6,7 @@
 - [x] copilot
 - [x] code formatter
 - [x] tmux
+- [x] ranger
 - [x] z.lua
 - [ ] lazygit
 
@@ -138,6 +139,18 @@ alias vim='nvim'
 
 ```bash
 ln -s ~/dotfiles/.config/tmux ~/.config/tmux
+```
+
+## ranger
+
+```
+brew install ranger
+```
+
+`vim ~/.zshrc`
+
+```
+export RANGER_LOAD_DEFAULT_RC=FALSE
 ```
 
 ## z.lua
