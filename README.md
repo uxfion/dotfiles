@@ -141,16 +141,31 @@ alias vim='nvim'
 ln -s ~/dotfiles/.config/tmux ~/.config/tmux
 ```
 
+### alias
+
+```
+alias tn='tmux new -s'
+alias ta='tmux attach -t'
+```
+
 ## ranger
 
 ```
 brew install ranger
+ln -s ~/dotfiles/.config/ranger ~/.config/ranger
 ```
 
 `vim ~/.zshrc`
 
 ```
 export RANGER_LOAD_DEFAULT_RC=FALSE
+```
+
+### alias
+
+```bash
+alias r='ranger'
+alias ra='ranger'
 ```
 
 ## z.lua
