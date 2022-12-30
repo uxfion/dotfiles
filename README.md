@@ -130,6 +130,7 @@ npm install -g prettier
 `vim ~/.bashrc`
 
 ```bash
+export EDITOR='nvim'
 alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
@@ -161,6 +162,7 @@ ln -s ~/dotfiles/.config/ranger ~/.config/ranger
 ```bash
 # ranger
 export RANGER_LOAD_DEFAULT_RC=FALSE
+export RANGER_ZLUA="/opt/homebrew/share/z.lua/z.lua"
 function ranger {
     local IFS=$'\t\n'
     local tempfile="$(mktemp -t tmp.XXXXXX)"
