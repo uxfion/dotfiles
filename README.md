@@ -155,6 +155,7 @@ alias ta='tmux attach -t'
 ```
 brew install ranger
 ln -s ~/dotfiles/.config/ranger ~/.config/ranger
+cd ~/dotfiles && git submodule update --init
 ```
 
 `vim ~/.zshrc`

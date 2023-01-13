@@ -93,6 +93,9 @@ packer.startup({
         --use("theHamsta/nvim-dap-virtual-text")
         --use("rcarriga/nvim-dap-ui")
 
+        -- ssh yank
+        use({ "ojroques/nvim-osc52" })
+
         if paccker_bootstrap then
             packer.sync()
         end
