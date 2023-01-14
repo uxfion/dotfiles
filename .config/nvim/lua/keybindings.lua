@@ -111,11 +111,13 @@ map("v", "p", '"_dP', opt)
 
 -- 保存
 map("n", "<leader>w", ":w<CR>", opt)
+map("n", "<leader>q", ":q<CR>", opt)
+map("n", "<leader>Q", ":q!<CR>", opt)
 
 -- 退出
-map("n", "q", ":q<CR>", opt)
-map("n", "qq", ":q!<CR>", opt)
-map("n", "Q", ":qa!<CR>", opt)
+-- map("n", "q", ":q<CR>", opt)
+-- map("n", "qq", ":q!<CR>", opt)
+-- map("n", "Q", ":qa!<CR>", opt)
 
 -- insert 模式下，跳到行首行尾
 map("i", "<C-h>", "<ESC>I", opt)
@@ -125,8 +127,8 @@ map("i", "<C-l>", "<ESC>A", opt)
 map("c", "<C-j>", "<C-n>", { noremap = false })
 map("c", "<C-k>", "<C-p>", { noremap = false })
 
---map("n", "<leader>fm", "gg=G<C-o>", opt)
-map("n", "<leader>fm", "<cmd>lua vim.lsp.buf.format({ async = true })<CR>", opt)
+-- map("n", "<leader>fm", "gg=G<C-o>", opt)
+map("n", "<leader>f", ":lua vim.lsp.buf.format({ bufnr = bufnr })<CR>", opt)
 
 -- ==================
 -- === 插件快捷键 ===

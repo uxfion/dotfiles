@@ -88,8 +88,8 @@ vim.api.nvim_create_autocmd("CursorHold", {
 keyset("n", "<leader>rn", "<Plug>(coc-rename)", { silent = true })
 
 -- Formatting selected code.
-keyset("x", "<leader>f", "<Plug>(coc-format-selected)", { silent = true })
-keyset("n", "<leader>f", "<Plug>(coc-format-selected)", { silent = true })
+-- keyset("x", "<leader>f", "<Plug>(coc-format-selected)", { silent = true })
+-- keyset("n", "<leader>f", "<Plug>(coc-format-selected)", { silent = true })
 
 -- Setup formatexpr specified filetype(s).
 vim.api.nvim_create_autocmd("FileType", {

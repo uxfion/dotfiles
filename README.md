@@ -130,6 +130,7 @@ npm install -g prettier
 `vim ~/.bashrc`
 
 ```bash
+# neovim
 export EDITOR='nvim'
 alias v='nvim'
 alias vi='nvim'
@@ -145,6 +146,7 @@ ln -s ~/dotfiles/.config/tmux ~/.config/tmux
 `vim ~/.zshrc`
 
 ```
+# tmux
 alias tl='tmux ls'
 alias tn='tmux new -s'
 alias ta='tmux attach -t'
