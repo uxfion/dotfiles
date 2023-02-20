@@ -13,6 +13,11 @@ treesitter.setup({
         "json",
         "lua",
         "bash",
+        "yaml",
+        "html",
+        "css",
+        "javascript",
+        "c"
     },
     -- 启用代码高亮模块
     highlight = {

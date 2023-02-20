@@ -185,6 +185,11 @@ alias r='ranger'
 alias ra='ranger'
 ```
 
+### ranger plugin
+
+- rclone copy
+- rclone move
+
 ## z.lua
 
 ```bash
