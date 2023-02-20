@@ -1,2 +1,5 @@
-pt,od:/pt
-temp,od:/temp
+otp,od:/temp
+odl,od:/dl
+opt,od:/pt
+ntp,nut:/Public/temp
+ndl,nut:/Public/dl
