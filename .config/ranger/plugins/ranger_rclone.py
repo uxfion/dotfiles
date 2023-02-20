@@ -143,9 +143,6 @@ class rclone_copy(Command):
             else:
                 for file in self.fm.thisdir.get_selection():
                     descr = "copying " + file.path + " to " + target
-                    # self.fm.notify(os.path.join(target, file.path.split('/')[-1]), bad=True)
-                    # target_dir = os.path.join(target, file.path.split('/')[-1])
-                    # self.fm.notify(target_dir, bad=True)
                     obj = CommandLoader(args=["rclone", "copy",
                                               "--no-traverse", file.path,
                                               target], descr=descr)
@@ -171,8 +168,13 @@ class rclone_copy_dir(Command):
                 self.fm.notify('No files to copy', bad=True)
             else:
                 for file in self.fm.thisdir.get_selection():
-                    # self.fm.notify(os.path.join(target, file.path.split('/')[-1]), bad=True)
-                    target_dir = os.path.join(target, file.path.split('/')[-1])
+                    target_dir = ""
+                    if file.is_directory:
+                        # self.fm.notify(os.path.join(target, file.path.split('/')[-1]), bad=True)
+                        target_dir = os.path.join(target, file.path.split('/')[-1])
+                    elif file.is_file:
+                        # self.fm.notify(os.path.join(target), bad=True)
+                        target_dir = target
                     # self.fm.notify(target_dir, bad=True)
                     descr = "copying " + file.path + " to " + target_dir
                     obj = CommandLoader(args=["rclone", "copy",
@@ -201,9 +203,6 @@ class rclone_move(Command):
             else:
                 for file in self.fm.thisdir.get_selection():
                     descr = "moving " + file.path + " to " + target
-                    # self.fm.notify(os.path.join(target, file.path.split('/')[-1]), bad=True)
-                    # target_dir = os.path.join(target, file.path.split('/')[-1])
-                    # self.fm.notify(target_dir, bad=True)
                     obj = CommandLoader(args=["rclone", "move",
                                               "--no-traverse", file.path,
                                               target], descr=descr)
@@ -229,8 +228,13 @@ class rclone_move_dir(Command):
                 self.fm.notify('No files to copy', bad=True)
             else:
                 for file in self.fm.thisdir.get_selection():
-                    # self.fm.notify(os.path.join(target, file.path.split('/')[-1]), bad=True)
-                    target_dir = os.path.join(target, file.path.split('/')[-1])
+                    target_dir = ""
+                    if file.is_directory:
+                        # self.fm.notify(os.path.join(target, file.path.split('/')[-1]), bad=True)
+                        target_dir = os.path.join(target, file.path.split('/')[-1])
+                    elif file.is_file:
+                        # self.fm.notify(os.path.join(target), bad=True)
+                        target_dir = target
                     # self.fm.notify(target_dir, bad=True)
                     descr = "moving " + file.path + " to " + target_dir
                     obj = CommandLoader(args=["rclone", "move",
