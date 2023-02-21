@@ -40,3 +40,5 @@ require("plugin-config.comment")
 require("plugin-config.indent-blankline")
 require("plugin-config.gitsigns")
 require("plugin-config.nvim-osc52")
+-- 自动选择输入法
+require("plugin-config.im-select")

@@ -111,13 +111,14 @@ map("v", "p", '"_dP', opt)
 
 -- 保存
 map("n", "<leader>w", ":w<CR>", opt)
-map("n", "<leader>q", ":q<CR>", opt)
-map("n", "<leader>Q", ":q!<CR>", opt)
+-- map("n", "<leader>q", ":q<CR>", opt)
+-- map("n", "<leader>Q", ":q!<CR>", opt)
 
 -- 退出
--- map("n", "q", ":q<CR>", opt)
--- map("n", "qq", ":q!<CR>", opt)
--- map("n", "Q", ":qa!<CR>", opt)
+-- 到时候录制可以用<leader>q
+map("n", "q", ":q<CR>", opt)
+map("n", "qq", ":q!<CR>", opt)
+map("n", "Q", ":qa!<CR>", opt)
 
 -- insert 模式下，跳到行首行尾
 map("i", "<C-h>", "<ESC>I", opt)

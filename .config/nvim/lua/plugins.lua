@@ -96,6 +96,9 @@ packer.startup({
         -- ssh yank
         use({ "ojroques/nvim-osc52" })
 
+        -- 自动切换输入法
+        use({ "keaising/im-select.nvim" })
+
         if paccker_bootstrap then
             packer.sync()
         end

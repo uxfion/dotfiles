@@ -1,6 +1,7 @@
 -- extensions
 vim.g.coc_global_extensions = {
     "coc-marketplace",
+    "coc-diagnostic",
     "coc-lists",
     "coc-pairs",
     "coc-snippets",
@@ -11,8 +12,7 @@ vim.g.coc_global_extensions = {
     "coc-docker",
     "coc-highlight",
     "coc-actions",
-    "coc-translator",
-    "coc-texlab",
+    "coc-html",
 }
 
 -- Some servers have issues with backup files, see #649.
