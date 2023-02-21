@@ -23,7 +23,8 @@ require("plugin-config.lualine")
 -- 搜索框
 require("plugin-config.telescope")
 -- dashboard
-require("plugin-config.dashboard")
+-- require("plugin-config.dashboard")
+require("plugin-config.alpha")
 -- project
 require("plugin-config.project")
 -- treesitter

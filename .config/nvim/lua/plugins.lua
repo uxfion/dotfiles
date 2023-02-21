@@ -66,10 +66,6 @@ packer.startup({
         -- telescope extensions
         use("LinArcX/telescope-env.nvim")
 
-        -- dashboard
-        use({
-            "glepnir/dashboard-nvim",
-        })
         use("ahmedkhalf/project.nvim")
 
         -- treesitter
@@ -98,6 +94,12 @@ packer.startup({
 
         -- 自动切换输入法
         use({ "keaising/im-select.nvim" })
+
+        -- 用alpha-nvim替换dashboard
+        use{
+            'goolord/alpha-nvim',
+            requires = 'nvim-tree/nvim-web-devicons'
+        }
 
         if paccker_bootstrap then
             packer.sync()
