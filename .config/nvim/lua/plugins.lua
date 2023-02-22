@@ -78,7 +78,16 @@ packer.startup({
         use({ "neoclide/coc.nvim", branch = "release" })
 
         -- copilot
-        use("github/copilot.vim")
+        -- use("github/copilot.vim")
+        -- 懒加载
+        use({
+            "zbirenbaum/copilot.lua",
+            cmd = "Copilot",
+            event = "InsertEnter",
+            config = function()
+                require("plugin-config.copilot")
+            end,
+        })
 
         use("numToStr/Comment.nvim")
         -- 结构线
@@ -96,10 +105,7 @@ packer.startup({
         use({ "keaising/im-select.nvim" })
 
         -- 用alpha-nvim替换dashboard
-        use{
-            'goolord/alpha-nvim',
-            requires = 'nvim-tree/nvim-web-devicons'
-        }
+        use({ "goolord/alpha-nvim", requires = "nvim-tree/nvim-web-devicons" })
 
         if paccker_bootstrap then
             packer.sync()

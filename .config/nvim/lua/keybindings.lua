@@ -121,8 +121,10 @@ map("n", "qq", ":q!<CR>", opt)
 map("n", "Q", ":qa!<CR>", opt)
 
 -- insert 模式下，跳到行首行尾
-map("i", "<C-h>", "<ESC>I", opt)
-map("i", "<C-l>", "<ESC>A", opt)
+map("i", "<C-a>", "<ESC>I", opt)
+map("i", "<C-e>", "<ESC>A", opt)
+map("i", "<C-h>", "<Left>", opt)
+map("i", "<C-l>", "<Right>", opt)
 
 -- 命令行下 ctrl+j/k 下一个上一个
 map("c", "<C-j>", "<C-n>", { noremap = false })
