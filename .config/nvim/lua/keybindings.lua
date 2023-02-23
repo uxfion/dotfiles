@@ -133,6 +133,7 @@ map("c", "<C-k>", "<C-p>", { noremap = false })
 -- map("n", "<leader>fm", "gg=G<C-o>", opt)
 map("n", "<leader>f", ":lua vim.lsp.buf.format({ bufnr = bufnr })<CR>", opt)
 
+
 -- ==================
 -- === 插件快捷键 ===
 -- ==================
@@ -207,9 +208,10 @@ map("n", "<leader>bp", ":BufferLinePickClose<CR>", opt)
 
 -- 查找文件
 map("n", "<C-p>", ":Telescope find_files<CR>", opt)
-
 -- 全局搜索
 map("n", "<C-f>", ":Telescop live_grep<CR>", opt)
+
+map("n", "<C-g>", ":Telescop oldfiles<CR>", opt)
 
 -- Telescope 列表中 插入模式快捷键
 pluginKeys.telescopeList = {

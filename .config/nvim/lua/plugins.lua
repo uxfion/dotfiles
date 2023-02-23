@@ -107,6 +107,9 @@ packer.startup({
         -- 用alpha-nvim替换dashboard
         use({ "goolord/alpha-nvim", requires = "nvim-tree/nvim-web-devicons" })
 
+        -- 代码运行
+        use({ "michaelb/sniprun", run = "bash ./install.sh" })
+
         if paccker_bootstrap then
             packer.sync()
         end

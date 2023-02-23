@@ -45,3 +45,5 @@ require("plugin-config.gitsigns")
 require("plugin-config.nvim-osc52")
 -- 自动选择输入法
 require("plugin-config.im-select")
+-- 代码运行
+require("plugin-config.sniprun")
