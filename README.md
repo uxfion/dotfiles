@@ -125,6 +125,12 @@ pip install black
 npm install -g prettier
 ```
 
+#### sniprun
+
+```bash
+brew install rustup
+```
+
 #### alias
 
 `vim ~/.bashrc`

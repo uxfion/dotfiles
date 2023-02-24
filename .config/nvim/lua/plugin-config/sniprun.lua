@@ -4,6 +4,14 @@ if not status then
     return
 end
 
+sniprun.setup({
+    -- display = {
+    --     -- "Classic",
+    --     "VirtualTextOk",
+    --     -- "VirtualText",
+    -- },
+})
+
 local opt = { noremap = true, silent = true }
 vim.api.nvim_set_keymap("n", "<leader>rr", "<Plug>SnipRun", opt)
 vim.api.nvim_set_keymap("v", "<leader>r", "<Plug>SnipRun", opt)

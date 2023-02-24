@@ -82,6 +82,7 @@ packer.startup({
         -- 懒加载
         use({
             "zbirenbaum/copilot.lua",
+            branch = "fix-suggestion-flicker",
             cmd = "Copilot",
             event = "InsertEnter",
             config = function()
