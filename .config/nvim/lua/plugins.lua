@@ -79,15 +79,14 @@ packer.startup({
 
         -- copilot
         -- use("github/copilot.vim")
-        -- 懒加载
         use({
             "zbirenbaum/copilot.lua",
-            branch = "fix-suggestion-flicker",
-            cmd = "Copilot",
-            event = "InsertEnter",
-            config = function()
-                require("plugin-config.copilot")
-            end,
+            -- 懒加载
+            -- cmd = "Copilot",
+            -- event = "InsertEnter",
+            -- config = function()
+            --     require("plugin-config.copilot")
+            -- end,
         })
 
         use("numToStr/Comment.nvim")

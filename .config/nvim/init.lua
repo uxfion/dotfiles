@@ -31,8 +31,8 @@ require("plugin-config.nvim-treesitter")
 -- coc
 require("plugin-config.coc")
 -- copilot
--- 使用懒加载，配置文件写在plugins里
--- require("plugin-config.copilot")
+-- 没有使用懒加载，如果需要配置文件写在plugins里
+require("plugin-config.copilot")
 -- 代码格式化
 require("plugin-config.null-ls")
 -- 注释快捷键
