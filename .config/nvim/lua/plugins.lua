@@ -102,7 +102,8 @@ packer.startup({
         use({ "ojroques/nvim-osc52" })
 
         -- 自动切换输入法
-        use({ "keaising/im-select.nvim" })
+        use({ "keaising/im-select.nvim", commit = "f81077" })
+
 
         -- 用alpha-nvim替换dashboard
         use({ "goolord/alpha-nvim", requires = "nvim-tree/nvim-web-devicons" })

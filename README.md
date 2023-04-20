@@ -83,21 +83,21 @@ pip install pynvim
 ##### raw
 
 ```bash
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt install -y nodejs
 ```
 
 ##### pack
 
 ```bash
-brew install node@16
+brew install node@18
 brew unlink node
-brew link --overwrite node@16
+brew link --overwrite node@18
 
-sudo snap install node --classic --channel=16
+sudo snap install node --classic --channel=18
 
 scoop bucket add versions
-scoop install nodejs16
+scoop install nodejs18
 ```
 
 ```bash
@@ -123,6 +123,12 @@ brew install fd
 brew install stylua
 pip install black
 npm install -g prettier
+```
+
+#### im-select
+
+```
+brew tap daipeihust/tap && brew install im-select
 ```
 
 #### sniprun
