@@ -1,5 +1,12 @@
 # dotfiles
 
+四大件
+
+tmux
+neovim
+ranger
+lazygit
+
 - [x] homebrew
 - [x] neovim
 - [x] coc

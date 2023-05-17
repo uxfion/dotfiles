@@ -1,0 +1,44 @@
+# 窗口导航
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - h : yabai -m window --focus west
+alt - l : yabai -m window --focus east
+
+# 移动窗口
+shift + alt - j : yabai -m window --swap south
+shift + alt - k : yabai -m window --swap north
+shift + alt - h : yabai -m window --swap west
+shift + alt - l : yabai -m window --swap east
+
+# 插入窗口
+ctrl + alt - j : yabai -m window --warp south
+ctrl + alt - k : yabai -m window --warp north
+ctrl + alt - h : yabai -m window --warp west
+ctrl + alt - l : yabai -m window --warp east
+
+# xy翻转
+shift + alt - x : yabai -m space --mirror x-axis
+shift + alt - y : yabai -m space --mirror y-axis
+
+# 浮动
+shift + alt - space : yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+# 最大化
+shift + alt - m : yabai -m window --toggle zoom-fullscreen
+
+# 恢复布局
+shift + alt - 0 : yabai -m space --balance
+
+# 移动窗口到桌面
+shift + alt - p : yabai -m window --space prev;
+shift + alt - n : yabai -m window --space next;
+
+shift + alt - 1 : yabai -m window --space 1;
+shift + alt - 2 : yabai -m window --space 2;
+shift + alt - 3 : yabai -m window --space 3;
+shift + alt - 4 : yabai -m window --space 4;
+
+# 起停
+shift + alt - q : yabai --stop-service
+shift + alt - s : yabai --start-service
+shift + alt - r : yabai --restart-service
