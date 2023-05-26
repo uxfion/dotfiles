@@ -24,7 +24,8 @@ shift + alt - y : yabai -m space --mirror y-axis
 shift + alt - space : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
 # 最大化
-shift + alt - m : yabai -m window --toggle zoom-fullscreen
+alt - f         : yabai -m window --toggle zoom-fullscreen
+shift + alt - f : yabai -m window --toggle native-fullscreen
 
 # 恢复布局
 shift + alt - 0 : yabai -m space --balance
@@ -42,3 +43,9 @@ shift + alt - 4 : yabai -m window --space 4;
 shift + alt - q : yabai --stop-service
 shift + alt - s : yabai --start-service
 shift + alt - r : yabai --restart-service
+
+# Stack
+# 就用两个映射吧，alt - s进入或者退出stack，alt - d 切换到下一个stack
+alt - s : ${HOME}/.config/yabai/scripts/toggle-window-bsp-stack.sh
+alt - a : yabai -m window --focus stack.next || yabai -m window --focus stack.first
+
